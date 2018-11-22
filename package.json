@@ -1,6 +1,6 @@
 {
   "name": "homebridge-htu21d",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Homebridge accessory plugin for HTU21D temperature and humidity sensor connected via i2c",
   "keywords": [
     "homebridge-plugin",
