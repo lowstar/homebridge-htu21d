@@ -9,16 +9,12 @@
     "humidity"
   ],
   "author": "lowstar",
-  "engines": {
-    "node": ">=0.12.0",
-    "homebridge": ">=0.2.0"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/lowstar/homebridge-htu21d"
   },
   "dependencies": {
-    "rpio": "^0.9.23"
+    "rpio": "^2.1.1"
   },
   "license": "MIT"
 }
