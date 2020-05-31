@@ -7,11 +7,11 @@ const readTemperature = () =>
     rpio.i2cSetBaudRate(100000);    /* 100kHz */
     rpio.i2cSetClockDivider(2500);  /* 250MHz / 2500 = 100kHz */
 
-    rpio.i2cWrite(new Buffer([0xf3]));
+    rpio.i2cWrite(Buffer.from([0xf3]));
 
     rpio.msleep(100);
 
-    const rx = new Buffer(3);
+    const rx = Buffer.alloc(3);
     rpio.i2cRead(rx);
     rpio.i2cEnd();
 
@@ -29,11 +29,11 @@ const readHumidity = () =>
     rpio.i2cSetBaudRate(100000);    /* 100kHz */
     rpio.i2cSetClockDivider(2500);  /* 250MHz / 2500 = 100kHz */
 
-    rpio.i2cWrite(new Buffer([0xf5]));
+    rpio.i2cWrite(Buffer.from([0xf5]));
 
     rpio.msleep(100);
 
-    const rx = new Buffer(3);
+    const rx = Buffer.alloc(3);
     rpio.i2cRead(rx);
     rpio.i2cEnd();
 
