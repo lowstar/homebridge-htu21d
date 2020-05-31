@@ -1,6 +1,6 @@
 {
   "name": "homebridge-htu21d",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Homebridge accessory plugin for HTU21D temperature and humidity sensor connected via i2c",
   "keywords": [
     "homebridge-plugin",
@@ -12,6 +12,10 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/lowstar/homebridge-htu21d"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
   },
   "dependencies": {
     "rpio": "^2.1.1"
