@@ -5,7 +5,7 @@ var Service, Characteristic;
 module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerAccessory("environment", "HTU21D", TemperatureSensor);
+  homebridge.registerAccessory("HTU21D", TemperatureSensor);
 };
 
 class TemperatureSensor {
